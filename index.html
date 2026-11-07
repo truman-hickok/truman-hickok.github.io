@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Truman Hickok</title>
+<meta name="description" content="Truman Hickok — independent researcher in robot learning and NeuroAI.">
+<meta property="og:title" content="Truman Hickok">
+<meta property="og:description" content="Independent researcher in robot learning and NeuroAI.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23176b5b'/><text x='16' y='22' font-family='Georgia,serif' font-size='17' fill='white' text-anchor='middle'>TH</text></svg>">
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --fg: #1c2230;
+    --muted: #5d6573;
+    --accent: #176b5b;
+    --rule: #e3e5e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171c;
+      --fg: #e6e8eb;
+      --muted: #9aa2ae;
+      --accent: #5cc4ab;
+      --rule: #2a2f37;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 64px 20px 80px; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .tagline { color: var(--muted); margin: 0 0 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; padding: 0; list-style: none; }
+  h2 {
+    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.09em;
+    color: var(--muted); margin: 48px 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  p { margin: 0 0 14px; }
+  .item { margin: 0 0 22px; }
+  .item-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .item-title { font-weight: 600; }
+  .when { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+  .sub { color: var(--muted); font-size: 0.95rem; }
+  ul.pubs { list-style: none; padding: 0; margin: 0; }
+  ul.pubs li { margin: 0 0 14px; }
+  .venue { color: var(--muted); font-style: italic; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Truman Hickok</h1>
+    <p class="tagline">Independent researcher · robot learning &amp; NeuroAI · Austin, TX</p>
+    <ul class="links">
+      <li><a href="mailto:hickoktruman@gmail.com">Email</a></li>
+      <li><a href="https://github.com/5hadytru">GitHub</a></li>
+      <li><a href="https://huggingface.co/5hadytru">Hugging Face</a></li>
+      <li><a href="https://x.com/h1ckok">X</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      I build benchmarks and run experiments on robot foundation models, and I study the brain as a learning system.
+      I'm currently working on <a href="https://so101-bench.github.io/">SO-101 Bench</a>, a real2sim2real benchmark for the low-cost SO-101 arm, and the
+      <a href="https://world-modeling-atlas.github.io/">Atlas of World Modeling in the Brain</a>.
+      Before going independent I was a research scientist at Southwest Research Institute. I hold an M.S. in Artificial Intelligence
+      and a B.S. in Computer Science from UT San Antonio.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="item">
+      <div class="item-head">
+        <a class="item-title" href="https://so101-bench.github.io/">SO-101 Bench: Accessible Spatial Manipulation</a>
+        <span class="when">2025 – present</span>
+      </div>
+      <p class="sub">
+        A real2sim2real benchmark for evaluating robot foundation models on the SO-101 arm. 8,000 teleoperated demos, an Isaac Lab
+        digital twin with sim2real transfer from sim data only, and VLAs, WAMs, and agents fine-tuned and evaluated under a matched
+        compute budget. CoRL 2026 Late Breaking Results; poster at a CVPR 2026 workshop.
+        <a href="https://github.com/5hadytru/so101_bench">Code</a> ·
+        <a href="https://huggingface.co/datasets/5hadytru/so101_bench_real">Data</a>
+      </p>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <a class="item-title" href="https://world-modeling-atlas.github.io/">Atlas of World Modeling in the Brain</a>
+        <span class="when">2025 – present</span>
+      </div>
+      <p class="sub">
+        A computational atlas of the brain as a learning system: an ML-style account of its architecture, learning rules
+        ("optimizers" such as cortex and cerebellum), training data, and developmental curriculum.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <ul class="pubs">
+      <li>
+        <a href="https://so101-bench.github.io/">SO-101 Bench: Accessible Spatial Manipulation</a><br>
+        T. Hickok. <span class="venue">CoRL 2026 Late Breaking Results.</span>
+      </li>
+      <li>
+        <a href="https://arxiv.org/abs/2505.12512">Scalable Strategies for Continual Learning with Replay</a><br>
+        T. Hickok. <span class="venue">arXiv 2025.</span>
+      </li>
+      <li>
+        <a href="https://arxiv.org/abs/2404.10758">Watch Your Step: Optimal Retrieval for Continual Learning at Scale</a><br>
+        T. Hickok, D. Kudithipudi. <span class="venue">CVPR Workshops 2024.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="item-head"><span class="item-title">Independent Research</span><span class="when">2025 – present</span></div>
+      <div class="sub">Robot learning &amp; NeuroAI</div>
+    </div>
+    <div class="item">
+      <div class="item-head"><span class="item-title">Southwest Research Institute</span><span class="when">2023 – 2025</span></div>
+      <div class="sub">Research Scientist / Analyst. Applied AI for defense programs: engine remaining-useful-life prediction, VLM-based
+        safety review of nuclear engineering documents, spiking networks for RF source localization, continual learning for RF data.</div>
+    </div>
+    <div class="item">
+      <div class="item-head"><span class="item-title">Neuromorphic AI Lab, UT San Antonio</span><span class="when">2022 – 2024</span></div>
+      <div class="sub">Lab Assistant. Continual learning research on replay-buffer sampling strategies.</div>
+    </div>
+    <div class="item">
+      <div class="item-head"><span class="item-title">Applied Research Laboratories, UT Austin</span><span class="when">2021</span></div>
+      <div class="sub">Software Engineering Intern. Embedded database and API (C++) for submarine navigation.</div>
+    </div>
+  </section>
+
+  <footer>© 2026 Truman Hickok</footer>
+</main>
+</body>
+</html>
