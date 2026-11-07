@@ -51,12 +51,17 @@
   ul.pubs { list-style: none; padding: 0; margin: 0; }
   ul.pubs li { margin: 0 0 14px; }
   .venue { color: var(--muted); font-style: italic; }
+  .hero { display: flex; align-items: center; gap: 20px; }
+  .hero img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex: none; }
   footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
 <body>
 <main>
   <header>
+    <div class="hero">
+      <img src="headshot.jpg" alt="Truman Hickok">
+      <div>
     <h1>Truman Hickok</h1>
     <p class="tagline">Independent researcher · robot learning &amp; NeuroAI · Austin, TX</p>
     <ul class="links">
@@ -66,6 +71,8 @@
       <li><a href="https://x.com/h1ckok">X</a></li>
       <li><a href="https://scholar.google.com/citations?user=jK2CG04AAAAJ">Google Scholar</a></li>
     </ul>
+      </div>
+    </div>
   </header>
 
   <section>
